@@ -15,3 +15,259 @@ calendar highlighted day: #F5005B
 button background: #F5005B
 copyright text: #FFFFFF*/
 /*font-family: 'PT Sans', sans-serif;*/
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'PT Sans';
+  background: transparent;
+}
+
+/*same across all pages*/
+
+header{
+  background-color: #7ddfe8;
+  display: flex;
+  height: 18vh;
+}
+header nav{
+  width: 100%;
+}
+
+.logo{
+  background-color: #f5005b;
+  padding: 2vh 2vw;
+}
+
+#logo{
+  width: 20vw;
+  height: 20vw;
+  padding: 2vw 2vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f5005b;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar li{
+  height: 33.33%;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5vh;
+  height: 6vh;
+}
+
+.nav-home {
+  background: #00A5BF;
+}
+
+.nav-calendar{
+  background: #00B7D3;
+}
+
+.nav-join{
+  background: #00D5E7;
+}
+
+footer{
+  background-color: #7ddfe8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+}
+
+footer nav{
+  width: 100%;
+}
+
+.footer li{
+  height: 33.33%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vh;
+  height: 6vh;
+}
+
+.nav-home {
+  background: #00A5BF;
+}
+
+.nav-calendar{
+  background: #00B7D3;
+}
+
+.nav-join{
+  background: #00D5E7;
+}
+
+/*home mobile*/
+h1{
+  font-size: 5vh;
+  font-weight: lighter;
+  margin: 2vh 3vw 0 3vw;
+}
+
+h2{
+  background: #0B1942;
+  color: #FFFFFF;
+  font-size: 4vh;
+  font-weight: lighter;
+  margin: 2.5vh 2.5vw;
+  padding: .5vh 4vw;
+}
+
+.get_involved_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.watch_section{
+  flex: 1;
+}
+
+.take_notes{
+  flex: 1;
+}
+
+.meetup{
+  flex: 1;
+}
+
+p{
+  padding: 2vw;
+  font-size: 1em;
+}
+
+.up_next{
+  background: #0b1942;
+  padding: 2vw 2vh;
+}
+
+.rashomon{
+  background: #e2e2e2;
+  padding: 4vw 4vh;
+  text-align: center;
+}
+
+.rashomon img{
+  height: 30vw;
+}
+
+.four_posters{
+  background: #e2e2e2;
+  padding: 2vw 2vh;
+  text-align: center;
+}
+
+/*calendar mobile*/
+
+.boxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px 2px;
+}
+
+.calendar{
+  background: #0b1942;
+  padding: 2vh 2vw;
+}
+
+.box{
+  background: #ffffff;
+  height: 9vh;
+}
+
+.box li{
+  background: #0b1942;
+  color: #ffffff;
+  font-size: 1.5vh;
+  font-weight: bold;
+  padding: 1vh 1vw;
+  float: left;
+}
+
+/*join mobile*/
+
+.profile{
+  display: grid;
+  padding: 5vh 5vh;
+}
+
+input[type='text']{
+  margin: 2vh 2vw;
+}
+
+.radio_buttons{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+
+/*TABLET TIME*/
+
+@media screen and (min-width: 545px){
+  .nav-bar{
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .nav-bar li{
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer{
+    flex-direction: row;
+    height: 100%;
+  }
+
+  footer li{
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+/*HOME TABLET*/
+
+.get_involved_content{
+  flex-direction: row;
+}
+
+h1 h2{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.four_posters{
+  flex-direction: row;
+}
+
+/*JOIN TABLET*/
+/*CREATE TWO ROWS FOR GENRES*/
+
+/*DESKTOP TIME*/
+
+@media (min-width: 769px) {
