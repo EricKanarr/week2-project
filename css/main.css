@@ -121,6 +121,8 @@ footer nav{
 }
 
 /*home mobile*/
+@media screen and (max-width: 544px){
+
 h1{
   font-size: 5vh;
   font-weight: lighter;
@@ -139,19 +141,6 @@ h2{
 .get_involved_content{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.watch_section{
-  flex: 1;
-}
-
-.take_notes{
-  flex: 1;
-}
-
-.meetup{
-  flex: 1;
 }
 
 p{
@@ -222,11 +211,12 @@ input[type='text']{
   display: grid;
   grid-template-columns: auto;
 }
-
+}
 
 /*TABLET TIME*/
 
 @media screen and (min-width: 545px){
+
   .nav-bar{
     height: 100%;
     flex-direction: row;
