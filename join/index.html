@@ -1,115 +1,145 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Film Club - Join</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="../images/filmclub.png" alt="">
-      </div>
-      <nav>
-        <ul class="nav-bar">
-          <li class="nav-home"><a href="../index.html">home</a></li>
-          <li class="nav-calendar"><a href="../calendar/index.html">calendar</a></li>
-          <li class="nav-join"><a href="index.html">join</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <h1>Join Film Club</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+  </style>
+</head>
 
-    <section class="profile" action="#" method="post">
-      <form class="join">
-        <div class="pic">
-          <label for="file">profile picture</label>
-          <input type="file" id="file" name="file">
-          <img src="../images/profile-placeholder.png">
+<body>
+  <nav>
+    <div class="logo"><img src="../images/filmclub.png" alt="film image logo"></div>
+    <ul class="nav-row">
+      <li class="nav-item nav-item1">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="nav-item nav-item2">
+        <a href="../calendar/index.html">Calendar</a>
+      </li>
+      <li class="nav-item nav-item3">
+        <a href="../join/index.html">Join</a>
+      </li>
+    </ul>
+  </nav>
+  <!--  1st container-->
+  <main>
+    <h1 class="join-header">Join Film Club</h1>
+    <form>
+      <div class = "top-form">
+        <div class = "download-container">
+        <div class="download">
+        <div class="file-container">
+          <h5>profile picture</h5>
+          <label for="file"></label>
+          <input type="file" id="file" />
         </div>
-    <section class="input">
-      <div class="info">
+        </div>
+        <div class="profile-pic">
+        <img src="../images/profile-placeholder.png" alt="profile picture">
+        </div>
+        </div>
+        <!-- text box list -->
+        <div class = "entire-input-container">
+          <div class = "top-container">
+        <div class="input-container">
         <label for="name">name</label>
         <input type="text" id="name" name="name">
-      </div>
-    </section>
-      <br>
-    <section class="input">
-      <div class="info">
-        <label for="email address">email address</label>
-        <input type="text" id="name" name="name">
-      </div>
-    </section>
-      <br>
-    <section class="input">
-      <div class="info">
+        </div>
+        <div class="input-container">
+        <label for="emailAddress">email address</label>
+        <input type="text" id="emailAddress" name="emailAddress"></div>
+          </div>
+
+        <div class = "bottom-container">
+        <div class="input-container">
         <label for="password">password</label>
-        <input type="text" id="name" name="name">
+        <input type="password" id="password" name="password"></div>
+        <div class="input-container">
+        <label for="confirmPassword">confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"></div>
+        </div>
       </div>
-    </section>
-      <br>
-    <section class="input">
-      <div class="info">
-        <label for="confirm password">confirm password</label>
-        <input type="text" id="name" name="name">
       </div>
-    </section>
-    <br>
-    <div class="radio_buttons">
-      <h3 class="radio-header">Which genres are you interested in?</h3>
-      <label>
-        <input type="radio" name="action" id="action" value="action">action
-      </label for="action"><br>
-      <label>
-        <input type="radio" name="adventure" id="adventure" value="adventure">adventure
-      </label for="adventure"><br>
-      <label>
-        <input type="radio" name="comedy" id="comedy" value="comedy">comedy
-      </label for="comedy"><br>
-      <label>
-        <input type="radio" name="drama" id="drama" value="drama">drama
-      </label for="drama"><br>
-      <label>
-        <input type="radio" name="fantasy" id="fantasy" value="fantasy">fantasy
-      </label for="fantasy"><br>
-      <label>
-        <input type="radio" name="historical" id="historical" value="historical">historical
-      </label for="historical"><br>
-      <label>
-        <input type="radio" name="horror" id="horror" value="horror">horror
-      </label for="horror"><br>
-      <label>
-        <input type="radio" name="mystery" id="mystery" value="mystery">mystery
-      </label for="mystery"><br>
-      <label>
-        <input type="radio" name="romance" id="romance" value="romance">romance
-      </label for="romance"><br>
-      <label>
-        <input type="radio" name="science-fiction" id="science-fiction" value="science-fiction">science fiction
-      </label for="science-fiction"><br>
-      <label>
-        <input type="radio" name="western" id="western" value="western">western
-      </label for="western"><br>
-  </div>
-  <div class="add-input-textbox">
-    <label for="opinions">Additional Input</label>
-    <textarea name="add-input" id="add-input" cols="50" rows="10"></textarea>
-  </div>
-  <div class="profile_submit">
-  <button type="submit">Join Film Club</button>
-  </div>
-</form>
-</section>
-    <footer>
-      <ul class="nav-bar">
-      <li class="nav-home"><a href="../index.html">home</a></li>
-      <li class="nav-calendar"><a href="../calendar/index.html">calendar</a></li>
-      <li class="nav-join"><a href="index.html">join</a></li>
-      <li>© 2017, Film Club</li>
-      </ul>
-    </footer>
-  </body>
+      <!--radio list  -->
+      <section class="interest">
+        <h3> Which genres are you interested in?</h3>
+        <div class="genres">
+          <div class="signup-type">
+          <input type="checkbox" name="user" value="action">
+          <label for="admin">action</label>
+        </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="adventure">
+            <label for="admin">adventure</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="comedy">
+            <label for="admin">comedy</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="drama">
+            <label for="admin">drama</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="fantasy">
+            <label for="admin">fantasy</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="historical">
+            <label for="admin">historical</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="horror">
+            <label for="admin">horror</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="mystery">
+            <label for="admin">mystery</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="romance">
+            <label for="admin">romance</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="science fiction">
+            <label for="admin">science fiction</label>
+          </div>
+          <div class="signup-type">
+            <input type="checkbox" name="user" value="western">
+            <label for="admin">western</label>
+          </div>
+        </div>
+      </section>
+      <!-- input box -->
+      <section>
+        <div class="additional-container">
+          <label for="textarea">Additional Input</label>
+      <textarea id="textarea"></textarea>
+        </div>
+      </section>
+      <input type= "submit" class="film-button" value= "Join Film Club"></input>
+    </form>
+    <!-- footer -->
+  </main>
+  <footer>
+    <ul class="footer-row">
+      <li class="nav-item nav-item1">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="nav-item nav-item2">
+        <a href="../calendar/index.html">Calendar</a>
+      </li>
+      <li class="nav-item nav-item3">
+        <a href="./index.html">Join</a>
+      </li>
+    </ul>
+    <span class="copywrite">© 2017, Film Club</span>
+  </footer>
+</body>
+
 </html>
